@@ -38,21 +38,89 @@
     ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 10px; }
 
     /* ── NAV ── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 4rem;
-      height: 80px;
-      background: rgba(245,240,232,0.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(201,168,76,0.3);
-      transition: all 0.3s ease;
-    }
-    .nav-logo {
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-    }
+   nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+
+  padding: 0 4rem;
+  height: 90px;
+
+  background: rgba(245,240,232,0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201,168,76,0.3);
+  transition: all 0.3s ease;
+}
+    .nav-logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-icon img {
+  height: 72px;
+  width: auto;
+  display: block;
+}
+
+.nav-logo-text img {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+ nav {
+    grid-template-columns: auto 1fr auto auto;
+    gap: 10px;
+    padding: 0 1rem;
+    height: 80px;
+  }
+
+  .nav-logo-icon img {
+    height: 50px;
+  }
+
+  .nav-logo-text img {
+    height: 34px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: var(--dark);
+    padding: 2rem;
+    gap: 1.5rem;
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+.hamburger {
+    display: flex;
+    justify-self: end;
+  }
+}
+    
     .nav-links { display: flex; gap: 2.5rem; list-style: none; }
     .nav-links a {
       color: #1A1208;
@@ -797,20 +865,36 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- NAV -->
-  <nav id="navbar">
-    <a href="#home" class="nav-logo"><img src="images/logo.png" alt="DeepHomes Logo" style="height:80px;width:auto;display:block;"/></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#quote" class="nav-cta">Get a Quote</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
-  </nav>
+ <nav id="navbar">
+
+  <!-- LEFT ICON LOGO -->
+  <a href="#home" class="nav-logo-icon">
+    <img src="images/logo-icon.png" alt="DH Icon Logo" />
+  </a>
+
+  <!-- CENTER NAV LINKS -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#quote" class="nav-cta">Get a Quote</a></li>
+  </ul>
+
+  <!-- RIGHT TEXT LOGO -->
+  <a href="#home" class="nav-logo-text">
+    <img src="images/logo-text.png" alt="DH Aluminium Window & Doors" />
+  </a>
+
+  <!-- MOBILE MENU -->
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</nav>
 
   <!-- HERO -->
   <section id="home">
