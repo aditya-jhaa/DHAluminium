@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W3X82F67');</script>
+  <!-- End Google Tag Manager -->
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DeepHomes – Premium Aluminium Windows & Doors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E2C97E;
+      --gold-pale: #F5E9C8;
+      --black: #F5F0E8;
+      --dark: #EDE8DF;
+      --dark2: #E4DDD2;
+      --dark3: #D9D1C4;
+      --white: #1A1208;
+      --grey: #6B6459;
+      --font-display: 'Cormorant Garamond', serif;
+      --font-body: 'Jost', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-weight: 300;
+      overflow-x: hidden;
+    }
+
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--dark2); }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 10px; }
+
+    /* ── NAV ── */
+   nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+
+  padding: 0 4rem;
+  height: 90px;
+
+  background: rgba(245,240,232,0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(201,168,76,0.3);
+  transition: all 0.3s ease;
+}
+    .nav-logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-icon img {
+  height: 72px;
+  width: auto;
+  display: block;
+}
+
+.nav-logo-text img {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 0;
+    height: 80px;
+  }
+
+  .nav-logo-icon,
+  .nav-logo-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-logo-icon {
+    margin-right: -8px;
+  }
+
+  .nav-logo-icon img {
+    height: 58px;
+    width: auto;
+    display: block;
+  }
+
+  .nav-logo-text img {
+    height: 58px;
+    width: auto;
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: var(--dark);
+    padding: 2rem;
+    gap: 1.5rem;
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+}
+    
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a {
+      color: #1A1208;
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: color 0.3s;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute; bottom: -4px; left: 0;
+      width: 0; height: 1px;
+      background: var(--gold);
+      transition: width 0.3s ease;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta {
+      background: var(--gold);
+      color: var(--black) !important;
+      padding: 0.5rem 1.4rem;
+      border-radius: 2px;
+      font-weight: 600 !important;
+      letter-spacing: 1.5px !important;
+    }
+    .nav-cta:hover { background: var(--gold-light) !important; color: var(--black) !important; }
+    .nav-cta::after { display: none !important; }
+
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { width: 26px; height: 2px; background: var(--gold); transition: all 0.3s; }
+
+    /* ── HERO ── */
+    #home {
+      position: relative;
+      height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+      background: var(--black);
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1800&q=80&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: scale(1.05);
+      transition: transform 8s ease;
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.65) 0%,
+        rgba(0,0,0,0.45) 50%,
+        rgba(0,0,0,0.65) 100%
+      );
+    }
+    .hero-accent {
+      position: absolute;
+      width: 600px; height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+      top: 50%; left: 60%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      text-align: center;
+      max-width: 900px;
+      padding: 0 2rem;
+      margin-top: 80px;
+      animation: fadeUp 1.2s ease both;
+    }
+    .hero-eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      font-weight: 300;
+      line-height: 1.05;
+      margin-bottom: 1.5rem;
+      color: #FAFAFA;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .hero-sub {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.85);
+      max-width: 560px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.8;
+      font-weight: 300;
+    }
+    .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-gold {
+      background: var(--gold);
+      color: var(--black);
+      padding: 0.85rem 2.2rem;
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border: none; cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s, transform 0.2s;
+      border-radius: 2px;
+    }
+    .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      padding: 0.85rem 2.2rem;
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border: 1px solid rgba(255,255,255,0.25);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s;
+      border-radius: 2px;
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+    .hero-scroll {
+      position: absolute; bottom: 2.5rem; left: 50%;
+      transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+      color: var(--grey); font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase;
+      animation: bounce 2s ease-in-out infinite;
+    }
+    .hero-scroll::before {
+      content: '';
+      width: 1px; height: 50px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+    }
+
+    /* ── SECTION BASE ── */
+    section { padding: 7rem 4rem; }
+    .section-eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+    .section-title em { font-style: italic; color: var(--gold); }
+    .section-desc {
+      color: var(--grey);
+      font-size: 0.95rem;
+      line-height: 1.9;
+      max-width: 540px;
+    }
+    .gold-line {
+      width: 50px; height: 2px;
+      background: var(--gold);
+      margin-bottom: 2rem;
+    }
+
+    /* ── STATS STRIP ── */
+    .stats-strip {
+      background: var(--dark2);
+      border-top: 1px solid rgba(201,168,76,0.2);
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      padding: 3rem 4rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 600;
+      color: var(--gold);
+    }
+    .stat-label {
+      font-size: 0.72rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--grey);
+      margin-top: 0.3rem;
+    }
+
+    /* ── PRODUCTS ── */
+    #products { background: var(--dark); }
+    .products-header { max-width: 1200px; margin: 0 auto 4rem; }
+
+    /* Category tabs */
+    .prod-tabs {
+      max-width: 1200px; margin: 0 auto 3rem;
+      display: flex; gap: 0; flex-wrap: wrap;
+      border: 1px solid rgba(201,168,76,0.2);
+    }
+    .prod-tab {
+      flex: 1; min-width: 160px;
+      padding: 1rem 1.5rem;
+      background: transparent;
+      border: none; border-right: 1px solid rgba(201,168,76,0.2);
+      color: var(--grey);
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-align: center;
+    }
+    .prod-tab:last-child { border-right: none; }
+    .prod-tab:hover { color: var(--gold); background: rgba(201,168,76,0.05); }
+    .prod-tab.active { background: var(--gold); color: var(--black); }
+
+    /* Category panels */
+    .prod-panel { display: none; max-width: 1200px; margin: 0 auto; }
+    .prod-panel.active { display: block; }
+
+    .prod-category-title {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--gold);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+    }
+
+    .prod-subcategory { margin-bottom: 3rem; }
+    .prod-subcategory-title {
+      font-size: 0.68rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--grey);
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+      border-left: 2px solid rgba(201,168,76,0.4);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5px;
+      background: rgba(201,168,76,0.12);
+      margin-bottom: 1.5px;
+    }
+    .product-card {
+      background: var(--dark2);
+      padding: 2rem 2rem 2.5rem;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .product-card:hover { background: var(--dark3); }
+    .product-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0;
+      width: 3px; height: 0;
+      background: var(--gold);
+      transition: height 0.4s ease;
+    }
+    .product-card:hover::before { height: 100%; }
+    .product-icon {
+      width: 44px; height: 44px;
+      border: 1px solid rgba(201,168,76,0.3);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.2rem;
+      font-size: 1.2rem;
+      transition: border-color 0.3s, background 0.3s;
+    }
+    .product-card:hover .product-icon {
+      border-color: var(--gold);
+      background: rgba(201,168,76,0.08);
+    }
+    .product-name {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+      color: var(--white);
+    }
+    .product-desc {
+      font-size: 0.82rem;
+      color: var(--grey);
+      line-height: 1.8;
+    }
+    .product-arrow {
+      position: absolute; bottom: 1.5rem; right: 1.5rem;
+      color: var(--gold); font-size: 1.1rem;
+      opacity: 0; transform: translateX(-8px);
+      transition: all 0.3s;
+    }
+    .product-card:hover .product-arrow { opacity: 1; transform: translateX(0); }
+
+    /* ── PROJECTS / GALLERY ── */
+    #projects { background: var(--black); }
+    .projects-header { max-width: 1200px; margin: 0 auto 3rem; }
+    .projects-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 260px 260px;
+      gap: 4px;
+    }
+    .project-item {
+      background: var(--dark3);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .project-item:nth-child(1) { grid-column: span 5; grid-row: span 2; }
+    .project-item:nth-child(2) { grid-column: span 4; }
+    .project-item:nth-child(3) { grid-column: span 3; }
+    .project-item:nth-child(4) { grid-column: span 3; }
+    .project-item:nth-child(5) { grid-column: span 4; }
+    .project-placeholder {
+      width: 100%; height: 100%;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      background: linear-gradient(135deg, var(--dark2), var(--dark3));
+      transition: transform 0.5s ease;
+    }
+    .project-item:hover .project-placeholder { transform: scale(1.04); }
+    .project-placeholder svg { width: 60px; height: 60px; opacity: 0.15; }
+    .project-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.4s;
+      display: flex; align-items: flex-end;
+      padding: 1.5rem;
+    }
+    .project-item:hover .project-overlay { opacity: 1; }
+    .project-label {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: var(--white);
+    }
+    .project-sub { font-size: 0.75rem; color: var(--gold); letter-spacing: 1px; }
+
+    /* ── ABOUT ── */
+    #about {
+      background: var(--dark);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+      max-width: none;
+    }
+    .about-visual {
+      position: relative;
+      height: 550px;
+    }
+    .about-box-main {
+      position: absolute;
+      top: 0; left: 0; right: 80px; bottom: 80px;
+      background: var(--dark3);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .about-box-accent {
+      position: absolute;
+      bottom: 0; right: 0;
+      width: 200px; height: 200px;
+      background: var(--gold);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .about-box-accent-inner {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--black);
+      text-align: center;
+      line-height: 1.1;
+    }
+    .about-box-accent-inner small {
+      display: block;
+      font-size: 0.7rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 0.2rem;
+    }
+    .about-frame-icon { opacity: 0.12; }
+    .about-content { padding-right: 4rem; }
+    .about-features {
+      margin-top: 2.5rem;
+      display: flex; flex-direction: column; gap: 1.2rem;
+    }
+    .about-feat {
+      display: flex; gap: 1rem; align-items: flex-start;
+    }
+    .about-feat-dot {
+      width: 6px; height: 6px;
+      background: var(--gold);
+      border-radius: 50%;
+      margin-top: 0.5rem;
+      flex-shrink: 0;
+    }
+    .about-feat-text { font-size: 0.9rem; color: var(--grey); line-height: 1.7; }
+    .about-feat-text strong { color: var(--white); font-weight: 500; }
+
+    /* ── QUOTE ── */
+    #quote { background: var(--black); }
+    .quote-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .quote-header { text-align: center; margin-bottom: 3.5rem; }
+    .quote-header .gold-line { margin: 0 auto 2rem; }
+    .quote-header .section-desc { margin: 0 auto; text-align: center; }
+    .quote-form {
+      background: var(--dark2);
+      border: 1px solid rgba(201,168,76,0.15);
+      padding: 3.5rem;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+    .form-group.full { grid-column: span 2; }
+    .form-group label {
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: var(--dark3);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: var(--white);
+      padding: 0.85rem 1rem;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 300;
+      outline: none;
+      border-radius: 2px;
+      transition: border-color 0.3s;
+      width: 100%;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color: var(--gold); }
+    .form-group select option { background: var(--dark3); }
+    .form-group textarea { resize: vertical; min-height: 130px; }
+    .form-submit { text-align: center; margin-top: 2rem; }
+    .form-submit .btn-gold { font-size: 0.8rem; padding: 1rem 3rem; }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--dark); }
+    .contact-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .contact-info { }
+    .contact-items { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 2rem; }
+    .contact-item { display: flex; gap: 1.2rem; }
+    .contact-item-icon {
+      width: 42px; height: 42px;
+      border: 1px solid rgba(201,168,76,0.3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .contact-item-label {
+      font-size: 0.68rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.3rem;
+    }
+    .contact-item-val { font-size: 0.9rem; color: var(--white); line-height: 1.6; }
+    .contact-form-area { }
+    .contact-form .form-row { margin-bottom: 1.5rem; }
+    .contact-form textarea {
+      background: var(--dark3);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: var(--white);
+      padding: 0.85rem 1rem;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 300;
+      outline: none;
+      border-radius: 2px;
+      transition: border-color 0.3s;
+      width: 100%;
+      resize: vertical;
+      min-height: 130px;
+    }
+    .contact-form textarea:focus { border-color: var(--gold); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark2);
+      border-top: 1px solid rgba(201,168,76,0.3);
+      padding: 3rem 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-logo { display: flex; align-items: center; }
+    .footer-copy { font-size: 0.78rem; color: #6B6459; }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a {
+      font-size: 0.78rem;
+      color: #6B6459;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+
+    /* ── PRODUCT DETAIL OVERLAY ── */
+    #product-detail {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: var(--dark);
+      overflow-y: auto;
+      transform: translateX(100%);
+      transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
+    }
+    #product-detail.open {
+      transform: translateX(0);
+    }
+    .pd-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 7rem 4rem 5rem;
+    }
+    .pd-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: var(--gold);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      background: none;
+      margin-bottom: 3rem;
+      transition: gap 0.2s;
+      padding: 0;
+    }
+    .pd-back:hover { gap: 1rem; }
+    .pd-back-arrow { font-size: 1rem; }
+    .pd-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .pd-image-wrap {
+      position: relative;
+      background: var(--dark2);
+      border: 1px solid rgba(201,168,76,0.15);
+      aspect-ratio: 4/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .pd-image-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      color: rgba(201,168,76,0.25);
+    }
+    .pd-image-placeholder svg { width: 80px; height: 80px; }
+    .pd-image-placeholder span {
+      font-size: 0.68rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(201,168,76,0.3);
+    }
+    .pd-image-wrap img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .pd-gold-badge {
+      position: absolute;
+      bottom: 1.2rem; right: 1.2rem;
+      background: var(--gold);
+      color: var(--black);
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 0.4rem 0.8rem;
+    }
+    .pd-content { }
+    .pd-category {
+      font-size: 0.68rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.8rem;
+    }
+    .pd-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+    }
+    .pd-divider {
+      width: 40px; height: 2px;
+      background: var(--gold);
+      margin-bottom: 1.5rem;
+    }
+    .pd-desc {
+      font-size: 0.95rem;
+      color: var(--grey);
+      line-height: 1.9;
+      margin-bottom: 2rem;
+    }
+    .pd-features {
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    .pd-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      font-size: 0.85rem;
+      color: var(--grey);
+    }
+    .pd-feature::before {
+      content: '';
+      width: 5px; height: 5px;
+      background: var(--gold);
+      border-radius: 50%;
+      margin-top: 0.45rem;
+      flex-shrink: 0;
+    }
+    .pd-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 900px) {
+      .pd-inner { padding: 6rem 1.5rem 4rem; }
+      .pd-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(-8px); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 900px) {
+      nav { padding: 0 1rem 0 0; }
+      .nav-links { display: none; flex-direction: column; position: fixed; top: 80px; left: 0; right: 0; background: var(--dark); padding: 2rem; gap: 1.5rem; border-bottom: 1px solid rgba(201,168,76,0.2); }
+      .nav-links.open { display: flex; }
+      .hamburger { display: flex; }
+      section { padding: 5rem 1.5rem; }
+      #about { grid-template-columns: 1fr; gap: 3rem; padding: 5rem 1.5rem; }
+      .about-content { padding-right: 0; }
+      .about-visual { height: 320px; }
+      .stats-strip { grid-template-columns: 1fr 1fr; padding: 2rem 1.5rem; }
+      .products-grid { grid-template-columns: 1fr; }
+      .prod-tabs { flex-direction: column; }
+      .prod-tab { border-right: none; border-bottom: 1px solid rgba(201,168,76,0.2); }
+      .projects-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+      .project-item { grid-column: span 1 !important; grid-row: span 1 !important; height: 200px; }
+      .contact-wrap { grid-template-columns: 1fr; gap: 3rem; }
+      .quote-form { padding: 2rem 1.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .form-group.full { grid-column: span 1; }
+      footer { flex-direction: column; text-align: center; padding: 2rem 1.5rem; }
+    }
+  </style>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W3X82F67');</script>
+  <!-- End Google Tag Manager -->
+
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3X82F67"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <nav id="navbar">
+
+  <!-- LEFT ICON LOGO -->
+  <a href="index.html" class="nav-logo-icon">
+    <img src="images/logo-icon.png" alt="DH Icon Logo" />
+  </a>
+
+  <!-- CENTER NAV LINKS -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="quote.html" class="nav-cta">Get a Quote</a></li>
+  </ul>
+
+  <!-- RIGHT TEXT LOGO -->
+  <a href="index.html" class="nav-logo-text">
+    <img src="images/logo-text.png" alt="DH Aluminium Window & Doors" />
+  </a>
+
+  <!-- MOBILE MENU -->
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</nav>
+
+  
+  <section style="padding:10rem 4rem 5rem;text-align:center;background:var(--dark);border-bottom:1px solid rgba(201,168,76,0.15);">
+    <p style="font-size:0.7rem;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500;">Our Range</p>
+    <div style="width:50px;height:2px;background:var(--gold);margin:0 auto 1.5rem;"></div>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:300;color:var(--white);line-height:1.1;">Premium Aluminium <em style="font-style:italic;color:var(--gold);">Systems</em></h1>
+    <p style="font-size:0.95rem;color:var(--grey);max-width:540px;margin:1.2rem auto 0;line-height:1.9;">From residential to commercial, our product range covers every requirement with precision-engineered aluminium solutions.</p>
+  </section>
+  <section id="products">
+    <div class="products-header">
+      <p class="section-eyebrow">Our Range</p>
+      <div class="gold-line"></div>
+      <h2 class="section-title">Aluminium Windows & Doors <em>System</em></h2>
+      <p class="section-desc">From residential to commercial, our product range covers every requirement with precision-engineered aluminium solutions.</p>
+    </div>
+
+    <!-- TABS -->
+    <div class="prod-tabs">
+      <button class="prod-tab active" onclick="switchTab('residential', this)">Residential</button>
+      <button class="prod-tab" onclick="switchTab('commercial', this)">Commercial</button>
+      <button class="prod-tab" onclick="switchTab('thermalbreak', this)">Thermal Break</button>
+      <button class="prod-tab" onclick="switchTab('security', this)">Security</button>
+      <button class="prod-tab" onclick="switchTab('architectural', this)">Architectural</button>
+      <button class="prod-tab" onclick="switchTab('hardware', this)">Hardware</button>
+    </div>
+
+    <!-- RESIDENTIAL -->
+    <div class="prod-panel active" id="panel-residential">
+      <p class="prod-category-title">AluRES — Residential Window & Door Systems</p>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Sliding Windows</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">🪟</div>
+            <div class="product-name">Comet Sliding Window</div>
+            <p class="product-desc">An entry-level residential sliding window offering smooth, reliable operation with clean sightlines. Ideal for budget-conscious builds without compromising on quality or performance.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🪟</div>
+            <div class="product-name">Zeus Sliding Window</div>
+            <p class="product-desc">A premium sliding window system with larger frame profiles and enhanced weather sealing. Suits contemporary homes requiring a robust, high-performance sliding solution.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Awning Windows</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">🔲</div>
+            <div class="product-name">Comet Awning Window</div>
+            <p class="product-desc">An entry-level top-hinged awning window that opens outward, allowing ventilation even during light rain. A practical, affordable choice for bathrooms, kitchens, and utility rooms.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔲</div>
+            <div class="product-name">Apollo Awning Window</div>
+            <p class="product-desc">A mid-range awning window combining improved weather resistance with a refined aesthetic. Suitable for suburban homes and multi-unit residential projects requiring dependable performance.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔲</div>
+            <div class="product-name">Titan Awning Window</div>
+            <p class="product-desc">Our premium awning window with heavy-duty profiles and superior weather seals. Designed for high-end residential projects that demand both architectural elegance and maximum performance.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Casement Windows</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">🔳</div>
+            <div class="product-name">Apollo Casement Window</div>
+            <p class="product-desc">A side-hinged casement window opening fully outward for maximum cross-flow ventilation. Clean lines and unobstructed views make it a popular choice for living rooms and bedrooms.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔳</div>
+            <div class="product-name">Titan Casement Window</div>
+            <p class="product-desc">A premium casement window with larger sash capacity and enhanced hardware. Engineered for high-end residential and light commercial applications requiring wide glass openings.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Sliding Doors</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">🚪</div>
+            <div class="product-name">Comet Sliding Door</div>
+            <p class="product-desc">A smooth-gliding residential sliding door system for seamless indoor-outdoor living. Precision rollers and robust locking ensure reliable, everyday performance.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🚪</div>
+            <div class="product-name">Comet Stacker Door</div>
+            <p class="product-desc">A multi-panel stacking door system that fully opens wide wall spans. Panels stack neatly to one side, creating an expansive opening perfect for entertaining areas and alfresco spaces.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🚪</div>
+            <div class="product-name">BIF Titan Apartment Door</div>
+            <p class="product-desc">A sliding door system built to handle heavy-duty residential apartment applications. Engineered with reinforced frames and upgraded hardware to meet the demands of multi-storey living.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Doors</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">🚪</div>
+            <div class="product-name">Artemis Series Entry Door</div>
+            <p class="product-desc">A premium residential entry door series combining striking kerb appeal with strong security performance. Available in a range of configurations to suit diverse architectural styles.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🚪</div>
+            <div class="product-name">Windsor Bi-Fold Door</div>
+            <p class="product-desc">A high-performance bi-fold door system that stacks panels to fully open a wall. Creates a seamless connection between indoor and outdoor spaces, ideal for living areas and alfresco zones.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Double Hung Windows</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">🪟</div>
+            <div class="product-name">Zeus Double Hung Window</div>
+            <p class="product-desc">A timeless double hung window with two counterbalanced vertically sliding sashes. Provides flexible ventilation control and suits traditional and contemporary homes alike.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🪟</div>
+            <div class="product-name">Apollo Sashless Window Frame</div>
+            <p class="product-desc">An accessory frame compatible with sashless window units and louvres, providing design flexibility for unique residential applications without compromising on aesthetics.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMMERCIAL -->
+    <div class="prod-panel" id="panel-commercial">
+      <p class="prod-category-title">AluCOMM — Commercial Window & Door Systems</p>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Door Systems</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">🏢</div>
+            <div class="product-name">Titan Apartment Door</div>
+            <p class="product-desc">A commercial-grade apartment door system built for multi-storey residential and mixed-use developments. Engineered for durability, security, and compliance with commercial building standards.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🏢</div>
+            <div class="product-name">BIF Titan Apartment Door</div>
+            <p class="product-desc">A robust sliding apartment door system designed for high-traffic commercial and residential applications. Features reinforced frames and precision-engineered hardware for long-term reliability.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🏢</div>
+            <div class="product-name">Ultramax Apartment Door</div>
+            <p class="product-desc">A premium apartment door system with a unique integrated support base designed to handle extreme glass weights. Perfect for high-end apartments requiring heavy double-glazed panels.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🏢</div>
+            <div class="product-name">Windsor Bi-Fold Door</div>
+            <p class="product-desc">A commercial-grade bi-fold door system engineered for large openings in offices, retail, and hospitality environments. Smooth operation and robust construction for high-use applications.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🏢</div>
+            <div class="product-name">Hinge Door</div>
+            <p class="product-desc">A versatile commercial hinge door system compatible with centre, front, and flush glazed suites. Wide range of stile, sill, and threshold options available to meet accessibility standards.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🏢</div>
+            <div class="product-name">Top Hung Door</div>
+            <p class="product-desc">A high-performing top-hung sliding door system ideal for schools, hospitals, and commercial spaces with strict no-trip-hazard requirements. No bottom track — perfect for high-traffic areas.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🏢</div>
+            <div class="product-name">Pivot Door</div>
+            <p class="product-desc">A striking commercial pivot door system providing a bold architectural statement. Designed for building entries, lobbies, and high-end commercial spaces where design impact is paramount.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Centre Glazed Frames</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">🔲</div>
+            <div class="product-name">7635-SG Centre Glazed</div>
+            <p class="product-desc">A single-glazed centre glazed frame system for commercial applications requiring clean, minimal framing. Ideal for office partitions and internal glazing.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔲</div>
+            <div class="product-name">10044-SG Centre Glazed</div>
+            <p class="product-desc">A larger single-glazed centre glazed frame system suited to commercial projects requiring wider sight lines and increased glass spans for open-plan office environments.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔲</div>
+            <div class="product-name">15044-SG Centre Glazed</div>
+            <p class="product-desc">A heavy-duty single-glazed centre frame system for large commercial glazing applications. Provides maximum structural support for expansive glass installations.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔲</div>
+            <div class="product-name">10044-DG Centre Glazed</div>
+            <p class="product-desc">A double-glazed centre frame system offering enhanced acoustic and thermal performance. Suited to commercial environments requiring improved energy efficiency and noise reduction.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔲</div>
+            <div class="product-name">10055-DG Centre Glazed</div>
+            <p class="product-desc">A premium double-glazed centre frame system with a deeper profile for superior insulation performance. Ideal for energy-conscious commercial developments.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Ultramax Window Systems</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">🪟</div>
+            <div class="product-name">Commercial Grade Sliding Window</div>
+            <p class="product-desc">A heavy-duty commercial sliding window system engineered for apartment buildings, schools, offices, and large-scale developments requiring robust, high-performance glazing.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🪟</div>
+            <div class="product-name">Commercial Grade Awning/Casement Window</div>
+            <p class="product-desc">A commercial-grade awning and casement window system capable of handling large sash sizes with precision Truth hardware. Perfect for high-end residential and commercial applications.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🪟</div>
+            <div class="product-name">Commercial Grade Counterbalanced Double Hung Window</div>
+            <p class="product-desc">A commercial-grade counterbalanced double hung window offering smooth sash operation in both directions. Suitable for apartments, hotels, and multi-storey commercial buildings.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- THERMAL BREAK -->
+    <div class="prod-panel" id="panel-thermalbreak">
+      <p class="prod-category-title">AluBREAK-COMM — Thermally Broken Systems</p>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Thermally Broken Window & Door Systems</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">❄️</div>
+            <div class="product-name">AluBREAK-COMM Awning / Fixed Window</div>
+            <p class="product-desc">A thermally broken awning and fixed window system that significantly reduces heat transfer between inside and outside. Engineered for energy-efficient commercial and high-end residential projects.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">❄️</div>
+            <div class="product-name">AluBREAK-COMM Sliding / Stacker Door</div>
+            <p class="product-desc">A thermally broken sliding and stacker door system delivering superior insulation performance. Ideal for climate-conscious developments requiring maximum energy efficiency without sacrificing design.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">❄️</div>
+            <div class="product-name">AluBREAK-COMM Hinge Door</div>
+            <p class="product-desc">A thermally broken hinge door system combining excellent thermal performance with commercial-grade strength. Perfect for energy-rated buildings and projects requiring compliance with strict thermal regulations.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECURITY -->
+    <div class="prod-panel" id="panel-security">
+      <p class="prod-category-title">AluSHIELD — Security Products</p>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Security Screens & Mesh</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">🔒</div>
+            <div class="product-name">Security Profiles</div>
+            <p class="product-desc">Heavy-duty aluminium security screen profiles engineered to complement DH Aluminium window and door systems. Designed to provide maximum protection without compromising on aesthetics.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔒</div>
+            <div class="product-name">Fibreglass Flyscreen Mesh</div>
+            <p class="product-desc">A lightweight and flexible fibreglass flyscreen mesh offering excellent insect protection with good airflow and visibility. A cost-effective solution for standard residential and commercial applications.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔒</div>
+            <div class="product-name">Aluminium Flyscreen Mesh</div>
+            <p class="product-desc">A durable aluminium flyscreen mesh providing a stronger alternative to fibreglass. Resistant to corrosion and suitable for environments requiring enhanced durability and longevity.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔒</div>
+            <div class="product-name">Stainless Steel Flyscreen Mesh</div>
+            <p class="product-desc">A premium stainless steel flyscreen mesh combining insect protection with enhanced security. Corrosion-resistant and ideal for coastal properties and high-end residential applications.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔒</div>
+            <div class="product-name">Stainless Steel Security Mesh</div>
+            <p class="product-desc">A high-tensile stainless steel security mesh offering superior intrusion resistance. Tested to rigorous security standards, providing peace of mind for homes and commercial properties.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔒</div>
+            <div class="product-name">Pet Mesh</div>
+            <p class="product-desc">A heavy-duty pet-resistant mesh designed to withstand scratching and impact from pets. Maintains full flyscreen functionality while providing a durable barrier suitable for households with animals.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔒</div>
+            <div class="product-name">Perforated Mesh</div>
+            <p class="product-desc">A perforated aluminium mesh panel offering privacy, shade, and ventilation control. Available in various perforation patterns to suit architectural screening and decorative applications.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔒</div>
+            <div class="product-name">Vision Guard</div>
+            <p class="product-desc">A premium security screen system providing strong protection with minimal visual obstruction. Engineered for homes and commercial spaces where security and clear sightlines are both essential.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔒</div>
+            <div class="product-name">Diamond Grilles</div>
+            <p class="product-desc">Decorative aluminium diamond grilles combining traditional security with architectural charm. A timeless design that enhances kerb appeal while providing a physical security barrier.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARCHITECTURAL -->
+    <div class="prod-panel" id="panel-architectural">
+      <p class="prod-category-title">AluSPAN — Architectural Building Products</p>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Wall Battens</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">🏗️</div>
+            <div class="product-name">Nova Wall Battens</div>
+            <p class="product-desc">Precision-extruded aluminium wall batten profiles for contemporary cladding and feature wall applications. Available in a range of sizes and finishes to suit any architectural design intent.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🏗️</div>
+            <div class="product-name">Strata Battens System</div>
+            <p class="product-desc">A complete wall batten system including profiles, fixings, and accessories for straightforward installation. Designed for residential and commercial feature walls, facades, and screening applications.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Louvres & Privacy Screens</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">🪜</div>
+            <div class="product-name">Louvre Profiles</div>
+            <p class="product-desc">High-quality aluminium louvre blade profiles providing adjustable ventilation, shade, and privacy. Suitable for pergolas, facades, fencing, and architectural screening in residential and commercial settings.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🪜</div>
+            <div class="product-name">Privacy Screening</div>
+            <p class="product-desc">Architectural aluminium privacy screening solutions for balconies, courtyards, and outdoor areas. Combining function and aesthetics, these screens provide privacy without sacrificing natural light or airflow.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Fencing & Other Products</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">🏗️</div>
+            <div class="product-name">Post and Rail Fencing</div>
+            <p class="product-desc">Durable aluminium post and rail fencing systems for residential and commercial properties. Low maintenance, corrosion-resistant, and available in a range of powder coat colours to suit any setting.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🏗️</div>
+            <div class="product-name">AluFOLD</div>
+            <p class="product-desc">A versatile aluminium folding system for internal and external applications. Engineered for a smooth, controlled folding action, suitable for partitions, room dividers, and multi-use spaces.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HARDWARE -->
+    <div class="prod-panel" id="panel-hardware">
+      <p class="prod-category-title">Hardware & Accessories</p>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Geometrics & Sheet Products</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">⚙️</div>
+            <div class="product-name">Geometrics</div>
+            <p class="product-desc">An extensive range of aluminium geometric shapes in various finishes, including angles, flat bars, square hollow sections, rectangular hollow sections, and channels for diverse fabrication requirements.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">⚙️</div>
+            <div class="product-name">Sheet Alloy & Tread Plates</div>
+            <p class="product-desc">High-quality aluminium sheet alloy and tread plate products for fabrication, cladding, and industrial applications. Available in multiple thicknesses and finishes to meet specific project requirements.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prod-subcategory">
+        <p class="prod-subcategory-title">Accessories</p>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-icon">🔧</div>
+            <div class="product-name">Windsor Bi-Fold Hardware</div>
+            <p class="product-desc">Precision-engineered hardware components specifically designed for Windsor Bi-Fold door systems. Includes tracks, pivots, and folding carriages for smooth, reliable bi-fold door operation.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔧</div>
+            <div class="product-name">Apartment Door Hardware</div>
+            <p class="product-desc">A complete range of hardware components for apartment door systems, including handles, locks, hinges, and closing mechanisms engineered to meet commercial building code requirements.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔧</div>
+            <div class="product-name">Evolution Sliding Door Locks</div>
+            <p class="product-desc">High-security multi-point locking systems for sliding doors. Engineered to provide superior security and smooth operation, suitable for both residential and commercial sliding door installations.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔧</div>
+            <div class="product-name">Glazing Wedges & Woolpile</div>
+            <p class="product-desc">Essential glazing accessories including wedge gaskets and wool pile weather seals, designed to complement DH Aluminium window and door systems for a secure, weatherproof finish.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔧</div>
+            <div class="product-name">Rollers & Edge Hinge Door Locks</div>
+            <p class="product-desc">Precision-engineered rollers for smooth sliding window and door operation, plus edge hinge door locking mechanisms providing reliable security for hinged aluminium door systems.</p>
+            <div class="product-arrow">→</div>
+          </div>
+          <div class="product-card">
+            <div class="product-icon">🔧</div>
+            <div class="product-name">Corner Joining Plates</div>
+            <p class="product-desc">Heavy-duty aluminium corner joining plates for fabricating strong, precise frame corners in window and door systems. Ensures structural integrity and dimensional accuracy in finished assemblies.</p>
+            <div class="product-arrow">→</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- PRODUCT DETAIL OVERLAY -->
+  <div id="product-detail" role="dialog" aria-modal="true">
+    <div class="pd-inner">
+      <button class="pd-back" onclick="closeProduct()">
+        <span class="pd-back-arrow">←</span> Back to Products
+      </button>
+      <div class="pd-grid">
+        <div class="pd-image-wrap" id="pd-image-wrap">
+          <div class="pd-image-placeholder" id="pd-placeholder">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="18" width="64" height="50" rx="2" stroke="#C9A84C" stroke-width="1.5"/>
+              <line x1="8" y1="42" x2="72" y2="42" stroke="#C9A84C" stroke-width="1.5"/>
+              <line x1="40" y1="18" x2="40" y2="68" stroke="#C9A84C" stroke-width="1.5"/>
+              <rect x="18" y="6" width="44" height="14" rx="1" stroke="#C9A84C" stroke-width="1.2"/>
+            </svg>
+            <span>Product Image Coming Soon</span>
+          </div>
+          <img id="pd-img" src="" alt="" style="display:none;width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"/>
+
+        </div>
+        <div class="pd-content">
+          <p class="pd-category" id="pd-category"></p>
+          <h2 class="pd-title" id="pd-title"></h2>
+          <div class="pd-divider"></div>
+          <p class="pd-desc" id="pd-desc"></p>
+          <div class="pd-features" id="pd-features"></div>
+          <div class="pd-actions">
+            <a href="#quote" class="btn-gold" onclick="closeProduct(); setTimeout(()=>document.querySelector('#quote').scrollIntoView({behavior:'smooth'}),100)">Request a Quote</a>
+            <button class="btn-outline" onclick="closeProduct()">View All Products</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-logo"><img src="images/logo.png" alt="DeepHomes Logo" style="height:110px;width:auto;display:block;"/></div>
+    <div class="footer-copy">© 2025 DH Aluminium window & doors. All rights reserved. · <a href="mailto:info@deephomes.com.au" style="color:var(--grey);text-decoration:none;">info@deephomes.com.au</a></div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+  <script>
+    // Mobile menu
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
+
+    // Scroll reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // Navbar shadow
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (nav) nav.style.boxShadow = window.scrollY > 60 ? '0 4px 30px rgba(0,0,0,0.15)' : 'none';
+    });
+
+    // Tab switching
+    function switchTab(tab, el) {
+      document.querySelectorAll('.prod-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.prod-panel').forEach(p => p.classList.remove('active'));
+      if (el) el.classList.add('active');
+      const panel = document.getElementById('panel-' + tab);
+      if (panel) panel.classList.add('active');
+    }
+
+    // Product data
+    const PRODUCTS = {
+      'comet-sliding-window': { name: 'Comet Sliding Window', category: 'Residential · Sliding Windows', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/08/CSW_Render.jpg', desc: 'An entry-level residential sliding window offering smooth, reliable operation with clean sightlines. Ideal for budget-conscious builds without compromising on quality or performance.', features: ['Smooth precision-roller operation','Clean, slim sightlines','Available in standard and custom sizes','Wide range of powder coat colours','Flyscreen compatible'] },
+      'zeus-sliding-window': { name: 'Zeus Sliding Window', category: 'Residential · Sliding Windows', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/09/Ultramax_Sliding_1-400x304.jpg', desc: 'A premium sliding window system with larger frame profiles and enhanced weather sealing. Suits contemporary homes requiring a robust, high-performance sliding solution.', features: ['Heavy-duty frame profiles','Superior multi-point weather sealing','Suitable for larger glass spans','Enhanced security locking','Flyscreen and double glazing compatible'] },
+      'comet-awning-window': { name: 'Comet Awning Window', category: 'Residential · Awning Windows', image: 'https://www.keilorwindows.com.au/assets/images/awningwindowsimg1.jpg', desc: 'An entry-level top-hinged awning window that opens outward, allowing ventilation even during light rain. A practical, affordable choice for bathrooms, kitchens, and utility rooms.', features: ['Top-hinged outward opening','Ventilation in wet weather','Worm-gear operator for easy use','Flyscreen compatible','Available in multiple sizes'] },
+      'apollo-awning-window': { name: 'Apollo Awning Window', category: 'Residential · Awning Windows', image: 'https://s3-eu-west-1.amazonaws.com/specifiedbypro/15207/135144/ace-shelters-ltd-div-of-ace-engineers-morley-ltd_apollo-awning_photo_2_windowawning7.jpg', desc: 'A mid-range awning window combining improved weather resistance with a refined aesthetic. Suitable for suburban homes and multi-unit residential projects requiring dependable performance.', features: ['Enhanced weather sealing','Mid-range heavy-duty frames','Smooth worm-gear operation','Double glazing compatible','Suitable for multi-unit residential'] },
+      'titan-awning-window': { name: 'Titan Awning Window', category: 'Residential · Awning Windows', image: 'https://mytitanconstruction.com/service-areas/illinois/windows-doors/awning-sunview/gallary/awning-window-sunview-titan-tilt-latch.jpg', desc: 'Our premium awning window with heavy-duty profiles and superior weather seals. Designed for high-end residential projects that demand both architectural elegance and maximum performance.', features: ['Heavy-duty premium profiles','Superior multi-point weather seals','Large sash capacity','Double and triple glazing compatible','Ideal for high-end residential projects'] },
+      'apollo-casement-window': { name: 'Apollo Casement Window', category: 'Residential · Casement Windows', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQewccADrvK4UGToOBTfSD3JOnMdHKmkee-xw&s', desc: 'A side-hinged casement window opening fully outward for maximum cross-flow ventilation. Clean lines and unobstructed views make it a popular choice for living rooms and bedrooms.', features: ['Side-hinged full outward opening','Maximum cross-flow ventilation','Clear, unobstructed sightlines','Flyscreen compatible','Suitable for residential and light commercial'] },
+      'titan-casement-window': { name: 'Titan Casement Window', category: 'Residential · Casement Windows', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlLoZVVVVYT76lK8o0l5P95Ai1h8njpBG1uA&s', desc: 'A premium casement window with larger sash capacity and enhanced hardware. Engineered for high-end residential and light commercial applications requiring wide glass openings.', features: ['Large sash capacity','Truth hardware for smooth operation','Traditional flyscreen compatible','Double glazing ready','Suitable for high-end residential and commercial'] },
+      'comet-sliding-door': { name: 'Comet Sliding Door', category: 'Residential · Sliding Doors', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAoZ1aGigy1-9JWQD9VpUVRrDlr42w2UVTrg&s', desc: 'A smooth-gliding residential sliding door system for seamless indoor-outdoor living. Precision rollers and robust locking ensure reliable, everyday performance.', features: ['Precision stainless steel rollers','Robust multi-point locking','Wide panel widths available','Flyscreen track compatible','Indoor-outdoor living ready'] },
+      'comet-stacker-door': { name: 'Comet Stacker Door', category: 'Residential · Sliding Doors', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/08/Indoor_Render_Comet-stacker-Door-1024x683.jpg', desc: 'A multi-panel stacking door system that fully opens wide wall spans. Panels stack neatly to one side, creating an expansive opening perfect for entertaining areas and alfresco spaces.', features: ['Multi-panel stacking configuration','Full wall-span opening','Panels stack flush to wall','Integrated flyscreen track','Ideal for alfresco and entertainment areas'] },
+      'bif-titan-apartment-door-res': { name: 'BIF Titan Apartment Door', category: 'Residential · Sliding Doors', image: 'https://conceptaluminium.com.au/wp-content/uploads/2025/09/3.jpg', desc: 'A sliding door system built to handle heavy-duty residential apartment applications. Engineered with reinforced frames and upgraded hardware to meet the demands of multi-storey living.', features: ['Reinforced heavy-duty frames','Upgraded roller and track system','High-weight glass capacity','Multi-point locking as standard','Designed for apartment applications'] },
+      'artemis-series': { name: 'Artemis Series Entry Door', category: 'Residential · Doors', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/08/titan-entry-949x1024.jpg', desc: 'A premium residential entry door series combining striking kerb appeal with strong security performance. Available in a range of configurations to suit diverse architectural styles.', features: ['Premium entry door aesthetics','High-security multi-point locking','Multiple configuration options','Double glazing compatible','Suits all architectural styles'] },
+      'windsor-bifold-door-res': { name: 'Windsor Bi-Fold Door', category: 'Residential · Doors', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh2EcXk8Wl51dGkD8L4SlhRuiiAj4QOxrATg&s', desc: 'A high-performance bi-fold door system that stacks panels to fully open a wall. Creates a seamless connection between indoor and outdoor spaces, ideal for living areas and alfresco zones.', features: ['Multi-panel stacking bi-fold system','Full wall opening capability','Smooth top and bottom track operation','Double glazing compatible','Ideal for living areas and alfresco'] },
+      'zeus-double-hung-window': { name: 'Zeus Double Hung Window', category: 'Residential · Double Hung Windows', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/08/zeus-double-hung_window_final-717x1024.jpg', desc: 'A timeless double hung window with two counterbalanced vertically sliding sashes. Provides flexible ventilation control and suits traditional and contemporary homes alike.', features: ['Two counterbalanced vertically sliding sashes','Upper and lower sash ventilation','Classic and contemporary aesthetic','Suitable for bedrooms and living areas','Flyscreen compatible'] },
+      'apollo-sashless-frame': { name: 'Apollo Sashless Window Frame', category: 'Residential · Double Hung Windows', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/08/ZDH_Render-400x497.jpg', desc: 'An accessory frame compatible with sashless window units and louvres, providing design flexibility for unique residential applications without compromising on aesthetics.', features: ['Compatible with sashless window units','Louvre integration ready','Flexible design configurations','Clean minimalist aesthetic','Residential applications'] },
+      'titan-apartment-door': { name: 'Titan Apartment Door', category: 'Commercial · Door Systems', image: 'https://directaluminium.au/wp-content/uploads/2025/06/Commercial-Sliding-Door-.jpg', desc: 'A commercial-grade apartment door system built for multi-storey residential and mixed-use developments. Engineered for durability, security, and compliance with commercial building standards.', features: ['Commercial-grade heavy-duty frames','Multi-point security locking','Compliant with commercial building codes','High-cycle durability','Suitable for apartments and mixed-use developments'] },
+      'bif-titan-apartment-door': { name: 'BIF Titan Apartment Door', category: 'Commercial · Door Systems', image: 'https://conceptaluminium.com.au/wp-content/uploads/2025/09/2.jpg', desc: 'A robust sliding apartment door system designed for high-traffic commercial and residential applications. Features reinforced frames and precision-engineered hardware for long-term reliability.', features: ['Heavy-duty reinforced sliding frames','Precision-engineered roller system','High-traffic durability','Multi-point locking','Suitable for commercial and residential apartments'] },
+      'ultramax-apartment-door': { name: 'Ultramax Apartment Door', category: 'Commercial · Door Systems', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqKUuYCME5Z00SKLmrvht0fBiD07ADfzQ7Sw&s', desc: 'A premium apartment door system with a unique integrated support base designed to handle extreme glass weights. Perfect for high-end apartments requiring heavy double-glazed panels.', features: ['Integrated support base for extreme weights','Heavy double-glazed panel capacity','Premium finish quality','High-end apartment applications','Superior structural performance'] },
+      'windsor-bifold-door-comm': { name: 'Windsor Bi-Fold Door', category: 'Commercial · Door Systems', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThFF2QL5rn3LZprQ8ElzQs0DTZnI4RNSviZg&s', desc: 'A commercial-grade bi-fold door system engineered for large openings in offices, retail, and hospitality environments. Smooth operation and robust construction for high-use applications.', features: ['Commercial-grade bi-fold construction','Large opening spans','High-cycle smooth operation','Suitable for offices, retail, and hospitality','Double glazing compatible'] },
+      'hinge-door': { name: 'Hinge Door', category: 'Commercial · Door Systems', image: 'https://www.isuperhouse.com/wp-content/uploads/2021/01/aluminium-hinged-door-1.jpg', desc: 'A versatile commercial hinge door system compatible with centre, front, and flush glazed suites. Wide range of stile, sill, and threshold options available to meet accessibility standards.', features: ['Compatible with glazed suite systems','Wide stile and sill options','Accessibility-compliant thresholds','French door configuration available','Deep pocket stiles for AS.1288 compliance'] },
+      'top-hung-door': { name: 'Top Hung Door', category: 'Commercial · Door Systems', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/09/Screen-Shot-2024-09-07-at-11.24.13-AM.png', desc: 'A high-performing top-hung sliding door system ideal for schools, hospitals, and commercial spaces with strict no-trip-hazard requirements. No bottom track — perfect for high-traffic areas.', features: ['No bottom track — zero trip hazard','Soft close option available','Internal, external, and cavity applications','Easy adjustment options','Ideal for schools, hospitals, and commercial'] },
+      'pivot-door': { name: 'Pivot Door', category: 'Commercial · Door Systems', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/09/0f850f3b349e3518e0241f3aedeed19e.jpg', desc: 'A striking commercial pivot door system providing a bold architectural statement. Designed for building entries, lobbies, and high-end commercial spaces where design impact is paramount.', features: ['Bold pivot door action','Architectural statement piece','Suitable for large and heavy panels','Building entries and lobby applications','Premium hardware options'] },
+      '7635-sg': { name: '7635-SG Centre Glazed', category: 'Commercial · Centre Glazed Frames', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/09/39a4bbe081b21ad876bdc16892ca589a.jpg', desc: 'A single-glazed centre glazed frame system for commercial applications requiring clean, minimal framing. Ideal for office partitions and internal glazing.', features: ['Single glazing','Minimal sightlines','Office partitions and internal glazing','Clean architectural aesthetic','Compliant with commercial standards'] },
+      '10044-sg': { name: '10044-SG Centre Glazed', category: 'Commercial · Centre Glazed Frames', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/08/10044SG_Render.jpg', desc: 'A larger single-glazed centre glazed frame system suited to commercial projects requiring wider sight lines and increased glass spans for open-plan office environments.', features: ['Wide sightline single glazing','Increased glass span capacity','Open-plan office applications','Structurally robust','Commercial building compliant'] },
+      '15044-sg': { name: '15044-SG Centre Glazed', category: 'Commercial · Centre Glazed Frames', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/09/2e09fc1816e0a7e6909fa44069b588a7.jpg', desc: 'A heavy-duty single-glazed centre frame system for large commercial glazing applications. Provides maximum structural support for expansive glass installations.', features: ['Heavy-duty frame profiles','Maximum structural support','Large-span glass installations','Suitable for curtain wall integration','Commercial grade certified'] },
+      '10044-dg': { name: '10044-DG Centre Glazed', category: 'Commercial · Centre Glazed Frames', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/09/21623fe59937217a4e32e361b4dad23d.jpg', desc: 'A double-glazed centre frame system offering enhanced acoustic and thermal performance. Suited to commercial environments requiring improved energy efficiency and noise reduction.', features: ['Double glazing for thermal performance','Enhanced acoustic insulation','Energy-efficient commercial spaces','Wide glass span support','Commercial building compliant'] },
+      '10055-dg': { name: '10055-DG Centre Glazed', category: 'Commercial · Centre Glazed Frames', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/09/3baa639220ff7fa60b23775789bc43e4.jpg', desc: 'A premium double-glazed centre frame system with a deeper profile for superior insulation performance. Ideal for energy-conscious commercial developments.', features: ['Deep profile for superior insulation','Premium double glazing capacity','Maximum energy efficiency','Suitable for high-performance buildings','Commercial grade certified'] },
+      'commercial-sliding-window': { name: 'Commercial Grade Sliding Window', category: 'Commercial · Ultramax Window Systems', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/09/7ca919576890d4deaffcc502f23dfbd6.jpg', desc: 'A heavy-duty commercial sliding window system engineered for apartment buildings, schools, offices, and large-scale developments requiring robust, high-performance glazing.', features: ['Heavy-duty commercial profiles','Large sash and frame sizes','High cycle durability','Double glazing compatible','Tested to commercial building standards'] },
+      'commercial-awning-casement': { name: 'Commercial Grade Awning/Casement Window', category: 'Commercial · Ultramax Window Systems', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/09/444cad1a0c738e89866fb7819b1fe1da.jpg', desc: 'A commercial-grade awning and casement window system capable of handling large sash sizes with precision Truth hardware. Perfect for high-end residential and commercial applications.', features: ['Truth hardware for large sash sizes','Traditional flyscreen compatible','High-end residential and commercial','Large glass opening capacity','Contact us for latest Ultramax Plus version'] },
+      'commercial-double-hung': { name: 'Commercial Grade Counterbalanced Double Hung Window', category: 'Commercial · Ultramax Window Systems', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/09/8dd3f038ef568cc055d881ded5ee8abe.jpg', desc: 'A commercial-grade counterbalanced double hung window offering smooth sash operation in both directions. Suitable for apartments, hotels, and multi-storey commercial buildings.', features: ['Counterbalanced dual sash operation','Commercial-grade heavy profiles','Hotels and apartment applications','Double glazing compatible','Multi-storey building certified'] },
+      'alubreak-awning': { name: 'AluBREAK-COMM Awning / Fixed Window', category: 'Thermal Break · AluBREAK-COMM', image: 'https://conceptaluminium.com.au/wp-content/uploads/2025/11/1.png', desc: 'A thermally broken awning and fixed window system that significantly reduces heat transfer between inside and outside. Engineered for energy-efficient commercial and high-end residential projects.', features: ['Thermally broken aluminium profiles','Significantly reduced heat transfer','Energy-efficient performance','Fixed and awning configurations','Suitable for commercial and high-end residential'] },
+      'alubreak-sliding': { name: 'AluBREAK-COMM Sliding / Stacker Door', category: 'Thermal Break · AluBREAK-COMM', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/08/ThermaCOMM-Sliding-Door-Outdoor.jpg', desc: 'A thermally broken sliding and stacker door system delivering superior insulation performance. Ideal for climate-conscious developments requiring maximum energy efficiency without sacrificing design.', features: ['Thermally broken sliding and stacking door','Superior insulation performance','Energy rating compliant','Large panel configurations','Climate-conscious developments'] },
+      'alubreak-hinge': { name: 'AluBREAK-COMM Hinge Door', category: 'Thermal Break · AluBREAK-COMM', image: 'https://conceptaluminium.com.au/wp-content/uploads/2025/02/9.jpg', desc: 'A thermally broken hinge door system combining excellent thermal performance with commercial-grade strength. Perfect for energy-rated buildings and projects requiring compliance with strict thermal regulations.', features: ['Thermally broken hinge door','Commercial-grade structural strength','Compliant with thermal regulations','Energy-rated building suitable','Multiple configuration options'] },
+      'security-profiles': { name: 'Security Profiles', category: 'Security · AluSHIELD', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/04/DF7-600x400.png', desc: 'Heavy-duty aluminium security screen profiles engineered to complement DeepHomes window and door systems. Designed to provide maximum protection without compromising on aesthetics.', features: ['Heavy-duty aluminium construction','Complements DeepHomes systems','Maximum intrusion protection','Sleek, unobtrusive design','Multiple finish options'] },
+      'fibreglass-flyscreen': { name: 'Fibreglass Flyscreen Mesh', category: 'Security · AluSHIELD', image: 'https://conceptaluminium.com.au/wp-content/uploads/2025/03/fibreglass-flywire-mesh.jpg', desc: 'A lightweight and flexible fibreglass flyscreen mesh offering excellent insect protection with good airflow and visibility. A cost-effective solution for standard residential and commercial applications.', features: ['Lightweight and flexible','Excellent insect protection','Good airflow and visibility','Cost-effective solution','Residential and commercial applications'] },
+      'aluminium-flyscreen': { name: 'Aluminium Flyscreen Mesh', category: 'Security · AluSHIELD', image: 'https://conceptaluminium.com.au/wp-content/uploads/2025/03/aluminium-fly-screen-mesh-500x500-1.jpg', desc: 'A durable aluminium flyscreen mesh providing a stronger alternative to fibreglass. Resistant to corrosion and suitable for environments requiring enhanced durability and longevity.', features: ['Stronger than fibreglass mesh','Corrosion-resistant','Extended lifespan','Suitable for coastal environments','Residential and commercial applications'] },
+      'ss-flyscreen': { name: 'Stainless Steel Flyscreen Mesh', category: 'Security · AluSHIELD', image: 'https://conceptaluminium.com.au/wp-content/uploads/2025/03/stainless-steel-flyscreen-mesh-600x600.jpg', desc: 'A premium stainless steel flyscreen mesh combining insect protection with enhanced security. Corrosion-resistant and ideal for coastal properties and high-end residential applications.', features: ['Premium stainless steel construction','Insect protection with added security','Highly corrosion-resistant','Ideal for coastal properties','High-end residential applications'] },
+      'ss-security-mesh': { name: 'Stainless Steel Security Mesh', category: 'Security · AluSHIELD', image: 'https://conceptaluminium.com.au/wp-content/uploads/2025/03/stainless-steel-mesh-Copy.jpg', desc: 'A high-tensile stainless steel security mesh offering superior intrusion resistance. Tested to rigorous security standards, providing peace of mind for homes and commercial properties.', features: ['High-tensile stainless steel','Superior intrusion resistance','Tested to rigorous security standards','Residential and commercial applications','Corrosion-resistant finish'] },
+      'pet-mesh': { name: 'Pet Mesh', category: 'Security · AluSHIELD', image: 'https://conceptaluminium.com.au/wp-content/uploads/2025/03/pet-mesh-square.jpg', desc: 'A heavy-duty pet-resistant mesh designed to withstand scratching and impact from pets. Maintains full flyscreen functionality while providing a durable barrier suitable for households with animals.', features: ['Heavy-duty pet-resistant construction','Withstands scratching and impact','Full flyscreen functionality maintained','Suitable for all pet sizes','Residential applications'] },
+      'perforated-mesh': { name: 'Perforated Mesh', category: 'Security · AluSHIELD', image: 'https://conceptaluminium.com.au/wp-content/uploads/2025/03/Perforated-Mesh.jpg', desc: 'A perforated aluminium mesh panel offering privacy, shade, and ventilation control. Available in various perforation patterns to suit architectural screening and decorative applications.', features: ['Privacy and shade control','Ventilation management','Multiple perforation patterns','Architectural and decorative applications','Powder coat colour options'] },
+      'vision-guard': { name: 'Vision Guard', category: 'Security · AluSHIELD', image: 'https://conceptaluminium.com.au/wp-content/uploads/2025/03/vision-guard-600x600.jpg', desc: 'A premium security screen system providing strong protection with minimal visual obstruction. Engineered for homes and commercial spaces where security and clear sightlines are both essential.', features: ['Strong security protection','Minimal visual obstruction','Clear sightlines maintained','Residential and commercial applications','Premium finish options'] },
+      'diamond-grilles': { name: 'Diamond Grilles', category: 'Security · AluSHIELD', image: 'https://conceptaluminium.com.au/wp-content/uploads/2025/03/Diamond-Grill.jpg', desc: 'Decorative aluminium diamond grilles combining traditional security with architectural charm. A timeless design that enhances kerb appeal while providing a physical security barrier.', features: ['Classic diamond grille pattern','Traditional security barrier','Enhances architectural kerb appeal','Powder coat colours available','Residential applications'] },
+      'nova-wall-battens': { name: 'Nova Wall Battens', category: 'Architectural · AluSPAN', image: 'https://conceptaluminium.com.au/wp-content/uploads/2026/02/Wall-Batten-Render-1.png', desc: 'Precision-extruded aluminium wall batten profiles for contemporary cladding and feature wall applications. Available in a range of sizes and finishes to suit any architectural design intent.', features: ['Precision-extruded aluminium profiles','Contemporary cladding applications','Multiple sizes available','Wide range of powder coat finishes','Residential and commercial use'] },
+      'strata-battens': { name: 'Strata Battens System', category: 'Architectural · AluSPAN', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/05/ad07dc2beb054e5a070daf1dfff5f570-scaled.jpeg', desc: 'A complete wall batten system including profiles, fixings, and accessories for straightforward installation. Designed for residential and commercial feature walls, facades, and screening applications.', features: ['Complete system including fixings','Straightforward installation','Feature walls and facade applications','Residential and commercial suitable','Multiple finish options'] },
+      'louvre-profiles': { name: 'Louvre Profiles', category: 'Architectural · AluSPAN', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/05/04bcfdb35e8d4b41f751f57477905068.jpeg', desc: 'High-quality aluminium louvre blade profiles providing adjustable ventilation, shade, and privacy. Suitable for pergolas, facades, fencing, and architectural screening in residential and commercial settings.', features: ['Adjustable ventilation control','Shade and privacy management','Pergola and facade applications','Residential and commercial use','Multiple blade sizes and finishes'] },
+      'privacy-screening': { name: 'Privacy Screening', category: 'Architectural · AluSPAN', image: 'https://conceptaluminium.com.au/wp-content/uploads/2026/05/Atlas-Privacy-Screening-e1777935974863.png', desc: 'Architectural aluminium privacy screening solutions for balconies, courtyards, and outdoor areas. Combining function and aesthetics, these screens provide privacy without sacrificing natural light or airflow.', features: ['Balcony and courtyard screening','Natural light and airflow maintained','Architectural aesthetic appeal','Custom sizing available','Powder coat colour options'] },
+      'post-rail-fencing': { name: 'Post and Rail Fencing', category: 'Architectural · AluSPAN', image: 'https://conceptaluminium.com.au/wp-content/uploads/2025/07/Post-and-rail-fence.jpg', desc: 'Durable aluminium post and rail fencing systems for residential and commercial properties. Low maintenance, corrosion-resistant, and available in a range of powder coat colours to suit any setting.', features: ['Low maintenance aluminium construction','Corrosion-resistant','Wide colour range available','Residential and commercial applications','Long-term durability'] },
+      'alufold': { name: 'AluFOLD', category: 'Architectural · AluSPAN', image: 'https://conceptaluminium.com.au/wp-content/uploads/2026/02/AluFOLD-1.png', desc: 'A versatile aluminium folding system for internal and external applications. Engineered for a smooth, controlled folding action, suitable for partitions, room dividers, and multi-use spaces.', features: ['Smooth controlled folding action','Internal and external applications','Room dividers and partitions','Multi-use space flexibility','Residential and commercial suitable'] },
+      'geometrics': { name: 'Geometrics', category: 'Hardware & Accessories', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/05/e7b48772bfdba7baa79a10d20477a42b-600x450.jpeg', desc: 'An extensive range of aluminium geometric shapes in various finishes, including angles, flat bars, square hollow sections, rectangular hollow sections, and channels for diverse fabrication requirements.', features: ['Angles, flat bars, and channels','Square and rectangular hollow sections','Multiple alloy grades available','Various surface finishes','Fabrication and construction applications'] },
+      'sheet-alloy': { name: 'Sheet Alloy & Tread Plates', category: 'Hardware & Accessories', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/07/7d734320fbecb493317d27dc8864ddde-1-600x400.jpg', desc: 'High-quality aluminium sheet alloy and tread plate products for fabrication, cladding, and industrial applications. Available in multiple thicknesses and finishes to meet specific project requirements.', features: ['Multiple thickness options','Sheet alloy for fabrication and cladding','Tread plates for anti-slip applications','Various surface finishes','Industrial and construction use'] },
+      'windsor-bifold-hardware': { name: 'Windsor Bi-Fold Hardware', category: 'Hardware & Accessories', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/07/250mm-FLUSH-BOLT-WITH-ROUND-TIP-600x600.png', desc: 'Precision-engineered hardware components specifically designed for Windsor Bi-Fold door systems. Includes tracks, pivots, and folding carriages for smooth, reliable bi-fold door operation.', features: ['Precision-engineered components','Tracks, pivots, and folding carriages','Smooth and reliable operation','Compatible with Windsor Bi-Fold systems','Durable long-life construction'] },
+      'apartment-door-hardware': { name: 'Apartment Door Hardware', category: 'Hardware & Accessories', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/09/YARRA-VIEW-600x554.jpg', desc: 'A complete range of hardware components for apartment door systems, including handles, locks, hinges, and closing mechanisms engineered to meet commercial building code requirements.', features: ['Handles, locks, and hinges','Commercial building code compliant','Closing mechanisms included','High-cycle durability','Residential and commercial apartment use'] },
+      'evolution-locks': { name: 'Evolution Sliding Door Locks', category: 'Hardware & Accessories', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/09/c4798220054e38fe3a30f67ca4b6a3ca-600x538.jpg', desc: 'High-security multi-point locking systems for sliding doors. Engineered to provide superior security and smooth operation, suitable for both residential and commercial sliding door installations.', features: ['Multi-point high-security locking','Smooth operation mechanism','Residential and commercial suitable','Compatible with DeepHomes sliding door systems','Durable long-life construction'] },
+      'glazing-accessories': { name: 'Glazing Wedges & Woolpile', category: 'Hardware & Accessories', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/11/Flexible_plastic_prods-600x225.jpg', desc: 'Essential glazing accessories including wedge gaskets and wool pile weather seals, designed to complement DeepHomes window and door systems for a secure, weatherproof finish.', features: ['Glazing wedge gaskets','Wool pile weather seals','Compatible with DeepHomes systems','Weatherproof performance','Residential and commercial applications'] },
+      'rollers-locks': { name: 'Rollers & Edge Hinge Door Locks', category: 'Hardware & Accessories', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/05/a70ce21b8ac6e2064feaefcf5ee23c01-600x193.jpeg', desc: 'Precision-engineered rollers for smooth sliding window and door operation, plus edge hinge door locking mechanisms providing reliable security for hinged aluminium door systems.', features: ['Precision-engineered rollers','Smooth sliding operation','Edge hinge door locking','Reliable security performance','Compatible with DeepHomes systems'] },
+      'corner-joining-plates': { name: 'Corner Joining Plates', category: 'Hardware & Accessories', image: 'https://conceptaluminium.com.au/wp-content/uploads/2024/09/089664a875fb7419e401ffe68ceed7a8-600x552.jpg', desc: 'Heavy-duty aluminium corner joining plates for fabricating strong, precise frame corners in window and door systems. Ensures structural integrity and dimensional accuracy in finished assemblies.', features: ['Heavy-duty aluminium construction','Precise frame corner fabrication','Structural integrity assured','Dimensional accuracy','Compatible with all DeepHomes frame systems'] }
+    };
+
+    // Reverse lookup
+    const NAME_TO_KEY = {};
+    Object.entries(PRODUCTS).forEach(([key, p]) => {
+      NAME_TO_KEY[p.name.toLowerCase().trim()] = key;
+    });
+
+    // Open product detail
+    function openProduct(name) {
+      const key = NAME_TO_KEY[name.toLowerCase().trim()];
+      if (!key) return;
+      const p = PRODUCTS[key];
+      document.getElementById('pd-category').textContent = p.category;
+      document.getElementById('pd-title').textContent = p.name;
+      document.getElementById('pd-desc').textContent = p.desc;
+      document.getElementById('pd-features').innerHTML = p.features.map(f => '<div class="pd-feature">' + f + '</div>').join('');
+      const img = document.getElementById('pd-img');
+      const placeholder = document.getElementById('pd-placeholder');
+      if (p.image) {
+        img.src = p.image;
+        img.alt = p.name;
+        img.style.display = 'block';
+        placeholder.style.display = 'none';
+      } else {
+        img.style.display = 'none';
+        img.src = '';
+        placeholder.style.display = 'flex';
+      }
+      const overlay = document.getElementById('product-detail');
+      overlay.classList.add('open');
+      overlay.scrollTop = 0;
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProduct() {
+      document.getElementById('product-detail').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // Wire up product cards
+    document.querySelectorAll('.product-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const name = card.querySelector('.product-name')?.textContent?.trim();
+        if (name) openProduct(name);
+      });
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeProduct(); });
+  </script>
+</body>
+</html>
