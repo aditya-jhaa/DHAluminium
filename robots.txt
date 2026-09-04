@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Thank-you page is noindex — no value in crawling it
+Disallow: /thankyou.html
+
+Sitemap: https://www.dhaluminium.com.au/sitemap.xml
